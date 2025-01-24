@@ -2152,12 +2152,12 @@ namespace RomDev
 			if (className == "ActionEvent")
 			{
 				// Dirty hack due to shared class name with Unity
-				className = "AC." + className;
+				className = "RomDev." + className;
 			}
 
 			#if AC_ActionListPrefabs
-			if (!className.StartsWith ("AC.")) className = "AC." + className;
-			System.Runtime.Remoting.ObjectHandle handle = System.Activator.CreateInstance ("Assembly-CSharp", "AC." + className);
+			if (!className.StartsWith ("RomDev.")) className = "RomDev." + className;
+			System.Runtime.Remoting.ObjectHandle handle = System.Activator.CreateInstance ("Assembly-CSharp", "RomDev." + className);
 			Action newAction = (Action) handle.Unwrap ();
 			#else
 			Action newAction = (Action) CreateInstance (className);
