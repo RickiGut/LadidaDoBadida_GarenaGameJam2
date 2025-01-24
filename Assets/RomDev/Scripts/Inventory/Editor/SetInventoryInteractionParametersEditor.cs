@@ -1,0 +1,28 @@
+﻿#if UNITY_EDITOR
+
+using UnityEditor;
+
+namespace RomDev
+{
+
+	[CustomEditor (typeof (SetInventoryInteractionParameters))]
+	public class SetInventoryInteractionParametersEditor : Editor
+	{
+
+		private SetInventoryInteractionParameters _target;
+
+
+		public override void OnInspectorGUI ()
+		{
+			_target = (SetInventoryInteractionParameters) target;
+
+			_target.ShowGUI ();
+
+			UnityVersionHandler.CustomSetDirty (_target);
+		}
+		
+	}
+
+}
+
+#endif

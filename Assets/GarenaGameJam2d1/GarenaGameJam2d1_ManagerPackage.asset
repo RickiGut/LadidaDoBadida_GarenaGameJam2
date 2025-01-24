@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b4a24d0e4a28423fb3249b923d7e418, type: 3}
+  m_Name: GarenaGameJam2d1_ManagerPackage
+  m_EditorClassIdentifier: 
+  actionsManager: {fileID: 11400000, guid: 8b8765e846ae2f24a974ca4d522503e9, type: 2}
+  sceneManager: {fileID: 11400000, guid: eeb4477e06fdf764d9658b47ca30d89d, type: 2}
+  settingsManager: {fileID: 11400000, guid: 872c368a9b25b2f45be3c82539ed68dc, type: 2}
+  inventoryManager: {fileID: 11400000, guid: 19c28530dc11178479a3a547057fe27a, type: 2}
+  variablesManager: {fileID: 11400000, guid: 902203b93bd06cd43ac5fdcfc6866692, type: 2}
+  speechManager: {fileID: 11400000, guid: fcc775a10b23ec54fb9cc7c70290c70c, type: 2}
+  cursorManager: {fileID: 11400000, guid: ac5abcfa3f6522f4188d5c1fd13167cc, type: 2}
+  menuManager: {fileID: 11400000, guid: 8088a42837d25014ea6b8cf53813fae2, type: 2}
