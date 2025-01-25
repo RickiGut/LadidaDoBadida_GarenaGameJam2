@@ -29,10 +29,11 @@ namespace RomDev
 				CustomGUILayout.Header ("Player settings");
 				CustomGUILayout.BeginVertical ();
 
-				_target.healthBar = (HealthBar) CustomGUILayout.ObjectField <HealthBar> ("Health Bar:", _target.healthBar, false, "", "Health Bar.");
+				_target.healthBar = (HealthBar) CustomGUILayout.ObjectField <HealthBar> ("Health Bar:", _target.healthBar, true, "", "Health Bar.");
 				_target.healthBarId = CustomGUILayout.IntField("Health bar id: ", _target.healthBarId);
 				_target.initialHealth = CustomGUILayout.FloatField("Initial Health; ", _target.initialHealth);
 				_target.maxHealth = CustomGUILayout.FloatField("Max Health: ", _target.maxHealth);
+				_target.spriteRenderer = (SpriteRenderer) CustomGUILayout.ObjectField <SpriteRenderer> ("Sprite Renderer : ", _target.spriteRenderer, true, "", "SpriteRenderer");
 				if (settingsManager.hotspotDetection == HotspotDetection.PlayerVicinity)
 				{
 					_target.hotspotDetector = (DetectHotspots) CustomGUILayout.ObjectField <DetectHotspots> ("Hotspot detector child:", _target.hotspotDetector, true, "", "The DetectHotspots component to rely on for hotspot detection. This should be a child object of the Player.");

@@ -63,7 +63,7 @@ MonoBehaviour:
   playerSwitching: 1
   legacyPlayer: {fileID: 0}
   playerPrefab:
-    playerOb: {fileID: 11451102, guid: 13c716119cfb8394ca8c1e9a27bb6d98, type: 3}
+    playerOb: {fileID: 11451102, guid: a3b379e6c61a5d542897f7ad13d03140, type: 3}
     ID: 0
     isDefault: 0
     startingSceneIndex: 0

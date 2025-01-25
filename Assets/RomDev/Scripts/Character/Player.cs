@@ -55,10 +55,13 @@ namespace RomDev
 		public bool rightMovementLocked = false;
 		public bool freeAimLocked = false;
 		public bool jumpingLocked = false;
+		#region My Vars
 		public HealthBar healthBar;
 		public int healthBarId;
 		public float initialHealth;
         public float maxHealth;
+		public SpriteRenderer spriteRenderer;
+		#endregion
 
 		#if UNITY_2019_2_OR_NEWER
 		public bool autoStickToNavMesh = false;
@@ -142,11 +145,15 @@ namespace RomDev
 		/** The Player's "Update" function, called by StateHandler. */
 		public override void _Update ()
 		{
+			//test
+			// Debug.Log("Sprite angle: " + GetSpriteAngle());
+			UpdateSpriteRendererFlip();
 			if (!IsActivePlayer ())
 			{
 				base._Update ();
 				return;
 			}
+
 
 			if (firstPersonCamera && !KickStarter.stateHandler.MovementIsOff)
 			{
@@ -1304,6 +1311,20 @@ namespace RomDev
 			return prefix + name;
 		}
 
+		#endregion
+
+		#region My ProtectedFunctions
+		protected void UpdateSpriteRendererFlip()
+		{
+			float spriteAngle = GetSpriteAngle();
+			if(spriteAngle > 0 && spriteAngle < 180)
+			{
+				spriteRenderer.flipX = true;
+			}else
+			{
+				spriteRenderer.flipX = false;
+			}
+		}
 		#endregion
 
 
