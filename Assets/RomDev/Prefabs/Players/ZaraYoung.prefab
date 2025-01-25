@@ -112,7 +112,7 @@ Transform:
   m_GameObject: {fileID: 137124}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.87, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -522,7 +522,7 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.28}
+  m_Offset: {x: 0, y: 0.51}
   serializedVersion: 2
   m_Radius: 0.73
 --- !u!50 &5034224
@@ -741,7 +741,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nodes:
-  - {x: -0.6639828, y: -0.4998931, z: 0}
+  - {x: 0, y: 0, z: 0}
   nodeCommands: []
   commandSource: 0
   pathType: 2
@@ -781,7 +781,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.09721017, y: 0.18963152}
+  m_Offset: {x: -0.09721017, y: 0.60388386}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -792,5 +792,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.6156633, y: 1.379263}
+  m_Size: {x: 1.6156633, y: 1.445086}
   m_EdgeRadius: 0
