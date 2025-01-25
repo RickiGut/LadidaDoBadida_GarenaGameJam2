@@ -7,6 +7,7 @@ namespace RomDev
     public class InteractPortal : MonoBehaviour
     {
         public ActionList actionList;
+        public GameObject instructObj;
         private void Awake() {
             enabled = false;
         }
@@ -22,10 +23,12 @@ namespace RomDev
         public void EnableChecking()
         {
             enabled = true;
+            instructObj.SetActive(true);
         }
         public void DisableChecking()
         {
             enabled = false;
+            instructObj.SetActive(false);
         }
         private void PerformChecking()
         {
