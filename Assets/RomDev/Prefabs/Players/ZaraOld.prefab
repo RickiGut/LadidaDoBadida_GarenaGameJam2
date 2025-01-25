@@ -160,7 +160,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: 0f06aa7bf1224cb418bb07c44b822727, type: 2}
+  m_Sprite: {fileID: 21300000, guid: 6c0cbeb49e05ef84d9a81e8f64db7d86, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -181,7 +181,7 @@ Animator:
   m_GameObject: {fileID: 137124}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 115a2fb107b3d1f409d2679bb0e49785, type: 2}
+  m_Controller: {fileID: 9100000, guid: ae81bf2b0e409404486687d50c01a2e4, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -371,7 +371,7 @@ GameObject:
   - component: {fileID: 11489676}
   - component: {fileID: 5263010995142045935}
   m_Layer: 2
-  m_Name: ZaraYoung
+  m_Name: ZaraOld
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -570,7 +570,7 @@ MonoBehaviour:
   motionControl: 0
   talkingAnimation: 0
   separateTalkingLayer: 0
-  speechLabel: Zara (young)
+  speechLabel: Zara (old)
   lineID: -1
   displayLineID: -1
   speechColor: {r: 1, g: 1, b: 1, a: 1}
@@ -674,7 +674,7 @@ MonoBehaviour:
       maxAngle: 315
     isUpgraded: 1
   angleSnapping: 0
-  walkSpeedScale: 3
+  walkSpeedScale: 1.5
   runSpeedScale: 6
   reverseSpeedFactor: 1
   canRunInReverse: 1
@@ -741,7 +741,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nodes:
-  - {x: 0, y: 0, z: 0}
+  - {x: 0.67, y: 1.37, z: 0}
   nodeCommands: []
   commandSource: 0
   pathType: 2
