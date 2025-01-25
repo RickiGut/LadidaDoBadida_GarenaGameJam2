@@ -24,7 +24,7 @@ MonoBehaviour:
   actionNodeWidth: 300
   disableInstaller: 0
   installPath: Assets/RomDev
-  autosaveActionListsInterval: 30
+  autosaveActionListsInterval: 10
   retainExportFieldData: 1
   allowDragDrop: 0
   actionListAssetPath: 
