@@ -167,7 +167,7 @@ MonoBehaviour:
   showWhenPaused: 0
   canClickInCutscene: 0
   enabledOnStart: 0
-  actionListOnTurnOn: {fileID: 11400000, guid: c6e29f6ea3d084d049c474742119836c, type: 2}
+  actionListOnTurnOn: {fileID: 11400000, guid: b484890404b7f2746b8b3694fff42fff, type: 2}
   actionListOnTurnOff: {fileID: 0}
   updateWhenFadeOut: 1
   hideDuringSaveScreenshots: 1
@@ -176,8 +176,6 @@ MonoBehaviour:
   visibleElements:
   - {fileID: -2790999127774049870}
   - {fileID: -8169742802862938479}
-  - {fileID: 8953976215592373098}
-  - {fileID: -5653697015881359572}
   - {fileID: -4464609004410469092}
   transitionProgress: 0
   appearType: 3
@@ -236,7 +234,7 @@ MonoBehaviour:
   speechProximityLimit: 0
   speechProximityDistance: 10
   deleteUIWhenTurnOff: 0
-  biggestElementSize: {x: 69.299995, y: 100.5}
+  biggestElementSize: {x: 0, y: 0}
   rect:
     serializedVersion: 2
     x: 174.3
@@ -369,7 +367,7 @@ MonoBehaviour:
   outlineSize: 2
   effectColour: {r: 0, g: 0, b: 0, a: 1}
   buttonClickType: 3
-  actionList: {fileID: 11400000, guid: 0390d7199340c422da894cb624fdfddb, type: 2}
+  actionList: {fileID: 11400000, guid: 2de44ec978048a642ba504d42eac7da0, type: 2}
   parameterID: -1
   parameterValue: 0
   doFade: 0
@@ -1003,7 +1001,7 @@ MonoBehaviour:
   fontScaleFactor: 2
   fontColor: {r: 1, g: 1, b: 1, a: 1}
   fontHighlightColor: {r: 1, g: 1, b: 1, a: 1}
-  isVisible: 1
+  isVisible: 0
   isClickable: 1
   orientation: 0
   gridWidth: 3
@@ -1309,7 +1307,7 @@ MonoBehaviour:
   showWhenPaused: 0
   canClickInCutscene: 0
   enabledOnStart: 0
-  actionListOnTurnOn: {fileID: 11400000, guid: f08f08e6520c746f289f229b9ffebade, type: 2}
+  actionListOnTurnOn: {fileID: 11400000, guid: 505b0530b762c534da9dfdbff6ce533a, type: 2}
   actionListOnTurnOff: {fileID: 0}
   updateWhenFadeOut: 1
   hideDuringSaveScreenshots: 1
@@ -1580,7 +1578,7 @@ MonoBehaviour:
   outlineSize: 2
   effectColour: {r: 0, g: 0, b: 0, a: 1}
   buttonClickType: 3
-  actionList: {fileID: 11400000, guid: 673b36f59d83c4cc5b707d270f4ad87a, type: 2}
+  actionList: {fileID: 11400000, guid: 7b25c9db6434c9f4d8630106d883841d, type: 2}
   parameterID: -1
   parameterValue: 0
   doFade: 0
@@ -1616,7 +1614,7 @@ MonoBehaviour:
   rectTransformID: 1765320
   uiTransitionType: 1
   uiPositionType: 0
-  _isLocked: 0
+  _isLocked: 1
   id: 3
   title: Inventory
   manualSize: {x: 100, y: 12.60303}
@@ -1756,7 +1754,7 @@ MonoBehaviour:
   outlineSize: 2
   effectColour: {r: 0, g: 0, b: 0, a: 1}
   buttonClickType: 3
-  actionList: {fileID: 11400000, guid: 0bf9476cfba3b416c969199b54211877, type: 2}
+  actionList: {fileID: 11400000, guid: 37c46c80ae4389f4c9675de42978dd5f, type: 2}
   parameterID: -1
   parameterValue: 0
   doFade: 0
@@ -3008,14 +3006,14 @@ MonoBehaviour:
   globalDepth: 0
   pauseTexture: {fileID: 0}
   scaleTextEffects: 0
-  keyboardControlWhenPaused: 1
+  keyboardControlWhenPaused: 0
   keyboardControlWhenCutscene: 0
-  keyboardControlWhenDialogOptions: 1
+  keyboardControlWhenDialogOptions: 0
   autoSelectValidRaycasts: 0
   horizontalInputAxis: Horizontal
   verticalInputAxis: Vertical
   useAddressables: 0
-  hasUpgraded: 0
+  hasUpgraded: 1
   doWindowsPreviewFix: 1
   drawOutlines: 1
   drawInEditor: 1
@@ -3467,7 +3465,7 @@ MonoBehaviour:
   outlineSize: 2
   effectColour: {r: 0, g: 0, b: 0, a: 1}
   buttonClickType: 3
-  actionList: {fileID: 11400000, guid: 7e291607709b64c05a5146e66857ebd9, type: 2}
+  actionList: {fileID: 11400000, guid: 03efcf325a9538847b609fd8530862e5, type: 2}
   parameterID: -1
   parameterValue: 0
   doFade: 0
@@ -3847,7 +3845,7 @@ MonoBehaviour:
   outlineSize: 2
   effectColour: {r: 0, g: 0, b: 0, a: 1}
   buttonClickType: 3
-  actionList: {fileID: 11400000, guid: 57583fbafdf1e4964a77aba6223bc687, type: 2}
+  actionList: {fileID: 11400000, guid: 193e2b40becae4449a86a9ce0cf85eb0, type: 2}
   parameterID: -1
   parameterValue: 0
   doFade: 0
@@ -4935,7 +4933,7 @@ MonoBehaviour:
   showWhenPaused: 0
   canClickInCutscene: 0
   enabledOnStart: 0
-  actionListOnTurnOn: {fileID: 11400000, guid: d25b1951b64504ecca2be84c2a8e0668, type: 2}
+  actionListOnTurnOn: {fileID: 11400000, guid: b8348569214318443827fcf49a1993cd, type: 2}
   actionListOnTurnOff: {fileID: 0}
   updateWhenFadeOut: 1
   hideDuringSaveScreenshots: 1
@@ -5512,7 +5510,7 @@ MonoBehaviour:
   outlineSize: 2
   effectColour: {r: 0, g: 0, b: 0, a: 1}
   buttonClickType: 3
-  actionList: {fileID: 11400000, guid: 591d780ae90874a03991d7fa69e706cb, type: 2}
+  actionList: {fileID: 11400000, guid: c1a9fac8b76f6714088fb01d2f2800b7, type: 2}
   parameterID: -1
   parameterValue: 0
   doFade: 0
@@ -5976,7 +5974,7 @@ MonoBehaviour:
   outlineSize: 2
   effectColour: {r: 0, g: 0, b: 0, a: 1}
   inventoryBoxType: 7
-  actionListOnClick: {fileID: 11400000, guid: 006991c5e5a2a4391bb18373a56ce249, type: 2}
+  actionListOnClick: {fileID: 11400000, guid: 539710385fc2a0348bb04b548ca97d59, type: 2}
   maxSlots: 5
   limitToCategory: 0
   limitToDefinedInteractions: 1
@@ -6791,7 +6789,7 @@ MonoBehaviour:
   fontScaleFactor: 2
   fontColor: {r: 1, g: 1, b: 1, a: 1}
   fontHighlightColor: {r: 1, g: 1, b: 1, a: 1}
-  isVisible: 1
+  isVisible: 0
   isClickable: 1
   orientation: 0
   gridWidth: 3
