@@ -55,6 +55,10 @@ namespace RomDev
 		public bool rightMovementLocked = false;
 		public bool freeAimLocked = false;
 		public bool jumpingLocked = false;
+		public HealthBar healthBar;
+		public int healthBarId;
+		public float initialHealth;
+        public float maxHealth;
 
 		#if UNITY_2019_2_OR_NEWER
 		public bool autoStickToNavMesh = false;
@@ -115,6 +119,11 @@ namespace RomDev
 		protected override void OnEnable ()
 		{
 			base.OnEnable ();
+			// fetch health bar
+			if(healthBarId != 0)
+			{
+				healthBar = ConstantID.GetComponent<HealthBar> (healthBarId);
+			}
 			EventManager.OnSetPlayer += OnSetPlayer;
 			EventManager.OnBeforeLoading += OnBeforeLoading;
 			
@@ -1515,6 +1524,30 @@ namespace RomDev
 			}
 		}
 
+		#endregion
+
+		#region health region
+		public void DealedDamaged(float damage)
+        {
+            if(initialHealth > 0f)
+            {
+                initialHealth-=damage;
+                float healthPercentage=initialHealth/maxHealth;
+                healthBar.SetHealthFill(healthPercentage);
+                if(initialHealth < 0f)
+                {
+                    initialHealth = 0;
+                }
+                if(initialHealth <= 0f)
+                {
+                    NPCDead();
+                }
+            }
+        }
+        public void NPCDead()
+        {
+            
+        }
 		#endregion
 
 	}

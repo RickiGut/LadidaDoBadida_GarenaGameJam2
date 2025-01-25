@@ -722,6 +722,10 @@ MonoBehaviour:
   rightMovementLocked: 0
   freeAimLocked: 0
   jumpingLocked: 0
+  healthBar: {fileID: 0}
+  healthBarId: 0
+  initialHealth: 3
+  maxHealth: 3
   autoStickToNavMesh: 0
 --- !u!114 &11489676
 MonoBehaviour:
@@ -736,7 +740,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nodes:
-  - {x: 2.38, y: -6.28, z: 0}
+  - {x: 0, y: 0, z: 0}
   nodeCommands: []
   commandSource: 0
   pathType: 2
