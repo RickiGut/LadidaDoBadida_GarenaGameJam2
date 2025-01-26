@@ -64,6 +64,7 @@ namespace RomDev
 			// Debug.Log("Funny");
 			if (gameObject.activeInHierarchy && !Application.isPlaying)
 			{
+				#if UNITY_EDITOR
 				if (!UnityVersionHandler.IsPrefabFile (gameObject) ||
 					UnityVersionHandler.IsPrefabEditing (gameObject))
 				{
@@ -78,6 +79,7 @@ namespace RomDev
 						CheckForDuplicateIDs ();
 					}
 				}
+				#endif
 			}
 		}
 

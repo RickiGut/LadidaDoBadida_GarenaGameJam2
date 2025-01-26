@@ -1815,7 +1815,7 @@ MonoBehaviour:
   numSlots: 1
   uiButton: {fileID: 0}
   uiPointerState: 0
-  _label: Quit
+  _label: Back To Menu
   hotspotLabel: 
   hotspotLabelID: -1
   anchor: 4

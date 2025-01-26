@@ -68,7 +68,7 @@ namespace RomDev
 				return theObj;
 			}
 			ConstantID constID = theObj.GetComponent<ConstantID>();
-			constID.AssignInitialValue();
+			// constID.AssignInitialValue();
 
 			if(targetScene == SceneChanger.CurrentSceneName || string.IsNullOrEmpty(targetScene))
 			{
@@ -94,7 +94,7 @@ namespace RomDev
 				return theObj;
 			}
 			ConstantID constID = theObj.GetComponent<ConstantID>();
-			constID.AssignInitialValue();
+			// constID.AssignInitialValue();
 
 			if(targetScene == SceneChanger.CurrentScene)
 			{
