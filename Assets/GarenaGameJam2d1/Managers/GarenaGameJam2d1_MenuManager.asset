@@ -1823,7 +1823,7 @@ MonoBehaviour:
   outlineSize: 2
   effectColour: {r: 0, g: 0, b: 0, a: 1}
   buttonClickType: 3
-  actionList: {fileID: 11400000, guid: 7b25c9db6434c9f4d8630106d883841d, type: 2}
+  actionList: {fileID: 11400000, guid: d0e2869eca589364eb76cf02ee56d000, type: 2}
   parameterID: -1
   parameterValue: 0
   doFade: 0

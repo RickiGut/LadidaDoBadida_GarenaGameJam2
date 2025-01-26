@@ -697,7 +697,7 @@ MonoBehaviour:
   wallLayer: Default
   wallDistance: 0.5
   wallReductionOnlyParameter: 1
-  walkSound: {fileID: 8300000, guid: 746e57cd578c84e189b6607bbdb6a1ec, type: 3}
+  walkSound: {fileID: 8300000, guid: 57ce387df8ed5bd43a39797318e3dd71, type: 3}
   runSound: {fileID: 0}
   textScrollClip: {fileID: 0}
   soundChild: {fileID: 11452930}

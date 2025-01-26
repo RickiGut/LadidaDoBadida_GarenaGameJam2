@@ -248,15 +248,20 @@ MonoBehaviour:
   blackOutWhenInitialising: 1
   spawnPersistentEnginePrefab: 1
   autoCallUnloadUnusedAssets: 1
-  playMusicWhilePaused: 0
+  playMusicWhilePaused: 1
   playAmbienceWhilePaused: 0
-  musicStorages: []
+  musicStorages:
+  - ID: 0
+    label: PerfectMusic
+    audioClip: {fileID: 8300000, guid: f2f9862e0d4349d42827314a3327e4c4, type: 3}
+    relativeVolume: 1
+    overrideMixerGroup: {fileID: 0}
   ambienceStorages: []
   loadAmbienceFadeTime: 0
   crossfadeAmbienceWhenLoading: 0
   restartAmbienceTrackWhenLoading: 0
-  loadMusicFadeTime: 0
-  crossfadeMusicWhenLoading: 0
+  loadMusicFadeTime: 0.42
+  crossfadeMusicWhenLoading: 1
   restartMusicTrackWhenLoading: 0
   autoEndOtherMusicWhenPlayed: 1
   musicPrefabOverride: {fileID: 0}
