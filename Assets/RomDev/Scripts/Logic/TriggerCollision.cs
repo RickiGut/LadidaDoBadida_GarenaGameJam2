@@ -4,44 +4,44 @@ using UnityEngine;
 
 namespace RomDev
 {
-    public class Trigger2D_L2 : MonoBehaviour
+    public class TriggerCollision : MonoBehaviour
     {
         public ActionList actionOnEnter;
         public ActionList actionOnContinuous;
         public ActionList actionOnExit;
         public string targetTag = "Player";
-        private void OnTriggerEnter2D(Collider2D other) {
+        private void OnCollisionEnter2D(Collision2D other) {
             if(actionOnEnter != null) {}
             {
                 if( ! string.IsNullOrEmpty(targetTag))
                 {
-                    if(other.tag != targetTag) return;
-                    Player _player = other.GetComponent<Player>();
-                    if( _player != null && ! _player.IsActivePlayer()) return;
+                    if(other.transform.tag != targetTag) return;
+                    Player _player = other.transform.GetComponent<Player>();
+                    if( _player != null ) return;
                 }
                 actionOnEnter.Interact();
-            }
+            }   
         }
-        private void OnTriggerStay2D(Collider2D other) {
+        private void OnCollisionStay2D(Collision2D other) {
             if(actionOnContinuous != null)
             {
                 if( ! string.IsNullOrEmpty(targetTag))
                 {
-                    if(other.tag != targetTag) return;
-                    Player _player = other.GetComponent<Player>();
-                    if( _player != null && ! _player.IsActivePlayer()) return;
+                    if(other.transform.tag != targetTag) return;
+                    Player _player = other.transform.GetComponent<Player>();
+                    if( _player != null ) return;
                 }
                 actionOnContinuous.Interact();
             }
         }
-        private void OnTriggerExit2D(Collider2D other) {
+        private void OnCollisionExit2D(Collision2D other) {
             if(actionOnExit != null)
             {
                 if( ! string.IsNullOrEmpty(targetTag))
                 {
-                    if(other.tag != targetTag) return;
-                    Player _player = other.GetComponent<Player>();
-                    if( _player != null && ! _player.IsActivePlayer()) return;
+                    if(other.transform.tag != targetTag) return;
+                    Player _player = other.transform.GetComponent<Player>();
+                    if( _player != null ) return;
                 }
                 actionOnExit.Interact();
             }

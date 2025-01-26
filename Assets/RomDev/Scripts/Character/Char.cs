@@ -1581,6 +1581,13 @@ namespace RomDev
 				_characterController.enabled = false;
 			}
 
+			// pre teleport
+			// Collider[] cols = GetComponentsInChildren<Collider> ();
+			// foreach (var col in cols)
+			// {
+			// 	col.enabled = false;
+			// }
+
 			Transform.position = _position;
 
 			if (_rigidbody)
@@ -1590,12 +1597,19 @@ namespace RomDev
 			else if (_rigidbody2D)
 			{
 				_rigidbody2D.position = _position;
+				// transform.position = _position;
 			}
 
 			if (enableCharacterController)
 			{
 				_characterController.enabled = true;
 			}
+
+			// after teleport
+			// foreach (var col in cols)
+			// {
+			// 	col.enabled = true;
+			// }
 
 			if (recalculateActivePathFind)
 			{

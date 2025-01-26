@@ -11,15 +11,18 @@ namespace RomDev
         public GameObject instructObj;
         public string lockParam = "IsLocked";
         public bool isLocked;
+        public string targetTag = "Player";
         private void Awake() {
             enabled = false;
         }
         private void OnTriggerEnter2D(Collider2D other) {
             if(isLocked) return;
+            if(other.tag != targetTag) return;
             EnableChecking();
         }
         private void OnTriggerExit2D(Collider2D other) {   
             if(isLocked) return;
+            if(other.tag != targetTag) return;
             DisableChecking();
         }
         private void Update() {

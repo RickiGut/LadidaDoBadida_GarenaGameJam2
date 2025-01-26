@@ -726,6 +726,7 @@ MonoBehaviour:
   healthBarId: 0
   initialHealth: 3
   maxHealth: 3
+  spriteRenderer: {fileID: 0}
   autoStickToNavMesh: 0
 --- !u!114 &11489676
 MonoBehaviour:

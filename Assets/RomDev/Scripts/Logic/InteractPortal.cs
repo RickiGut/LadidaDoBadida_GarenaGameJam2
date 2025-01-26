@@ -8,13 +8,16 @@ namespace RomDev
     {
         public ActionList actionList;
         public GameObject instructObj;
+        public string targetTag = "Player";
         private void Awake() {
             enabled = false;
         }
         private void OnTriggerEnter2D(Collider2D other) {
+            if(other.tag != targetTag) return;
             EnableChecking();
         }
         private void OnTriggerExit2D(Collider2D other) {   
+            if(other.tag != targetTag) return;
             DisableChecking();
         }
         private void Update() {

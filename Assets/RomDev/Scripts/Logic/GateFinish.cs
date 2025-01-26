@@ -11,7 +11,9 @@ namespace RomDev
         public string finishParam;
         public int getButton;
         public ActionList actionList;
+        public string targetTag = "Player";
         private void OnTriggerEnter2D(Collider2D other) {
+            if(other.tag != targetTag) return;
             CheckTotalButton();
         }
         public void ButtonPressed()
