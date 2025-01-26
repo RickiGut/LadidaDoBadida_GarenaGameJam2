@@ -7051,7 +7051,7 @@ MonoBehaviour:
   parentActionListInEditor: {fileID: 2037665391}
   constantID: 0
   parameterID: -1
-  linkedCamera: {fileID: 1240720058}
+  linkedCamera: {fileID: 1941621892}
   transitionTime: 0.3
   transitionTimeParameterID: -1
   timeCurve:
